@@ -15,7 +15,7 @@ type User struct {
 
 var users []User
 
-func server() {
+func main() {
 	router := gin.Default()
 	v1 := router.Group("/v1")
 	v1.GET("/hello", func(c *gin.Context) {
